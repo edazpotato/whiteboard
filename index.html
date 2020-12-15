@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Whiteboard</title>
+	<script src="app.js" defer></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main>
+		<nav id="nav">
+			<input id="colourPicker" type="color">
+			<!-- soon(tm) -->
+			<!--<label for="eraserModeButton">
+				<input id="eraserModeButton" type="checkbox">
+				Use eraser
+			</label>-->
+			<label for="thiccness">
+				<input type="range" min="1" max="100" value="10" class="slider" id="thiccness">
+				Brush width
+			</label>
+			<button id="clearButton">Clear</button>
+		</nav>
+		<canvas id="canvas"></canvas>
+	</main>
+</body>
+</html>
